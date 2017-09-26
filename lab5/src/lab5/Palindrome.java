@@ -44,7 +44,7 @@ public class Palindrome {
 	public static boolean isaPalindrome(String input) {
 		int length = input.length();
 		
-		if(input.equals(""))
+		if(input.equals("") || length == 1)
 			return true;
 		if(input.charAt(0) == input.charAt(length-1)) {
 			if(length == 3)
